@@ -22,4 +22,8 @@ Route::view('/', 'welcome');
 
 Route::get('bank', [BankController::class, 'show']);
 
+Route::post('addtransaction', [BankController::class, 'addTransaction']);
+
+Route::view('csrfonly', 'csrf');
+
 // Route::redirect('tytryetryerte', '/', 301);
